@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  color: #5e5e5e;
+}
+/* utilities */
+.title{
+  text-align: center;
+  margin: 10px 0;
+}
+.div-style{
+  padding: 20px;
+  box-shadow: 2px 3px 2px #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  /*#E8FFD2*/
+}
+.day{
+  font-weight: bold;
+}
+
+#form-container{
+  display: flex;
+  justify-content: center;
+}
+input{
+  border: solid 2px #68bcff;
+  outline: 0;
+  width: 300px;
+  height: 40px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 40px;
+  margin: 10px 0px;
+}
+button{
+  height: 40px;
+  width: 40px;
+  border: solid 2px #68bcff;
+  border-left: none;
+  outline: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-right: 5px;
+  margin-left:-6px;
+  background: #68bcff;
+  color: #fff;
+}
+
+#main-flex{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.container{
+  width: 600px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: 50px;
+
+}
+.container .icon{
+  width: 100px;
+  margin-bottom: 22px;
+  color: #68bcff;
+}
+.temperature{
+  font-size: 50px;
+  color: #68bcff;
+}
+.icon-info{
+  text-align: center;
+}
+
+#box-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.box{
+  width: 180px;
+  margin: 0 15px;
+  text-align: center;
+}
+.box h2{
+  color: #68bcff;
+}
+
+.box .wi{
+  font-size: 50px;
+  color: #68bcff;
+  margin-top: 15px;
+}
+footer{
+  text-align: center;
+  padding-top: 30px;
+}
+.github{
+  width: 30px;
+}
+
+img{
+  width: 50px;
+}
+
+/* Mobile design */
+@media(max-width: 500px) {
+  input{
+    width: 58vw;
+    height: 40px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 75vw;
+    text-align: center;
+  }
+  .temperature{
+    font-size: 35px;
+  }
+  .city{
+    font-size: 30px;
+  }
+  .container .wi{
+    font-size: 50px;
+    margin-bottom: 22px;
+    color: #68bcff;
+  }
+  #box-container{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .box{
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
