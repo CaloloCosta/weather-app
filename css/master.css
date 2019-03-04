@@ -19,6 +19,27 @@ body{
   border-radius: 5px;
   /*#E8FFD2*/
 }
+#warning{
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  padding: 10px 5px;
+  text-align: center;
+  display: none;
+}
+#loader{
+  margin: auto;
+  display: none;
+  text-align: center;
+}
+#loader > img{
+  width: 200px;
+}
+.t3{
+  display: none;
+}
 .day{
   font-weight: bold;
 }
@@ -53,9 +74,9 @@ button{
 
 #main-flex{
   margin-top: 10px;
-  display: flex;
   justify-content: center;
   margin-bottom: 15px;
+  display: none;
 }
 .container{
   width: 600px;
@@ -83,6 +104,7 @@ button{
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  display: none;
 }
 .box{
   width: 180px;
