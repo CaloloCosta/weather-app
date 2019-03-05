@@ -50,6 +50,9 @@ function currentLocation(){
     });
 
   }
+  else{
+    ui.turnGeoLocation();
+  }
 
 }
 
