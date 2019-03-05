@@ -26,6 +26,13 @@ class UI{
   }, 2000);
   this.clean();
   }
+  
+   // turn on geolocation
+  turnGeoLocation(){
+    warning.innerHTML = `<p>Please turn on geolocation, or type in the location.</p>`;
+    warning.style.background = "#68bcff";
+    warning.style.color = "#fff";
+  }
 
   // clean the form
   clean(){
