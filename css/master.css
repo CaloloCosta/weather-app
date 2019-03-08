@@ -7,15 +7,29 @@ body{
   font-family: sans-serif;
   color: #5e5e5e;
 }
+a{
+    color: #5e5e5e;
+    text-decoration: none;
+}
+a:hover{
+  color: #68bcff;
+
+}
 /* utilities */
 .title{
   text-align: center;
   margin: 10px 0;
 }
+.description{
+  margin-top:-47px;
+  color: #68bcff;
+  font-weight: bold;
+
+}
 .div-style{
   padding: 20px;
-  box-shadow: 2px 3px 2px #f4f4f4;
-  border: 1px solid #f4f4f4;
+  box-shadow: 3px 3px 3px #f4f4f4;
+  border: 2px solid #f4f4f4;
   border-radius: 5px;
   /*#E8FFD2*/
 }
@@ -39,6 +53,8 @@ body{
 }
 .t3{
   display: none;
+  text-align: center;
+  margin: auto;
 }
 .day{
   font-weight: bold;
@@ -110,15 +126,13 @@ button{
   width: 180px;
   margin: 0 15px;
   text-align: center;
+  padding-top: 5px;
 }
 .box h2{
   color: #68bcff;
 }
-
-.box .wi{
-  font-size: 50px;
-  color: #68bcff;
-  margin-top: 15px;
+.box img{
+  width: 100px;
 }
 footer{
   text-align: center;
@@ -135,7 +149,7 @@ img{
 /* Mobile design */
 @media(max-width: 500px) {
   input{
-    width: 58vw;
+    width: 80vw;
     height: 40px;
   }
   .container{
