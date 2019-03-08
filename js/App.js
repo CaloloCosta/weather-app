@@ -26,8 +26,8 @@ function requestInfo(city){
 
           for(let i = 7; i <= 21; i +=7){
             let day = new Date(d[i].dt_txt).getDay();
-            let min = `${celsius(d[i].main.temp_min)} | ${Math.floor(d[i].main.temp_min)}`;
-            let max = `${celsius(d[i].main.temp_max)} | ${Math.floor(d[i].main.temp_max)}`;
+            let min = `${celsius(d[i].main.temp_min)} ºC | ${Math.floor(d[i].main.temp_min)} ºF`;
+            let max = `${celsius(d[i].main.temp_max)} ºc | ${Math.floor(d[i].main.temp_max)} ºF`;
             ui.forecast(celsius(d[i].main.temp),Math.floor(d[i].main.temp),min,max,givenDay(day),d[i].weather[0].icon);
 
           }
@@ -60,8 +60,8 @@ function currentLocation(){
         .then(d =>{
           for(let i = 7; i <= 21; i +=7){
             let day = new Date(d[i].dt_txt).getDay();
-            let min = `${celsius(d[i].main.temp_min)} | ${Math.floor(d[i].main.temp_min)}`;
-            let max = `${celsius(d[i].main.temp_max)} | ${Math.floor(d[i].main.temp_max)}`;
+            let min = `${celsius(d[i].main.temp_min)} ºC | ${Math.floor(d[i].main.temp_min)} ºF`;
+            let max = `${celsius(d[i].main.temp_max)} ºC | ${Math.floor(d[i].main.temp_max)} ºF`;
             ui.forecast(celsius(d[i].main.temp),Math.floor(d[i].main.temp),min,max,givenDay(day),d[i].weather[0].icon);
           }
         });
