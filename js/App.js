@@ -83,14 +83,14 @@ function currentLocation(){
 // get the date
   function date(){
     const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday'];
+    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     let d = new Date;
     const date = `${days[d.getDay()]} | ${m[d.getMonth()]} ${d.getDate()}`;
     return date;
   }
 // given days
 function givenDay(d){
-  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Satarday'];
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   return days[d];
 
 }
